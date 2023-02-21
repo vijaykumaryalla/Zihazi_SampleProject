@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.498" height="27.166">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="ic_order" transform="translate(63.106 -358.241)">
+        <path id="Path_12118" data-name="Path 12118" class="cls-1" d="M-45.121 358.241h-15.472a2.538 2.538 0 0 0-2.513 2.55v22.064a2.54 2.54 0 0 0 2.515 2.552h15.47a2.539 2.539 0 0 0 2.513-2.55v-22.065a2.538 2.538 0 0 0-2.513-2.551zm1.188 2.55v22.069a1.21 1.21 0 0 1-1.19 1.222h-15.465a1.211 1.211 0 0 1-1.193-1.225v-22.069a1.21 1.21 0 0 1 1.19-1.222h15.465a1.212 1.212 0 0 1 1.193 1.225z"/>
+        <path id="Path_12119" data-name="Path 12119" class="cls-1" d="M-53.691 366.65h6.669a.662.662 0 0 0 .661-.661.662.662 0 0 0-.661-.661h-6.669a.662.662 0 0 0-.661.661.661.661 0 0 0 .661.661z"/>
+        <path id="Path_12120" data-name="Path 12120" class="cls-1" d="M-53.691 372.485h6.669a.662.662 0 0 0 .661-.661.662.662 0 0 0-.661-.661h-6.669a.661.661 0 0 0-.661.661.661.661 0 0 0 .661.661z"/>
+        <path id="Path_12121" data-name="Path 12121" class="cls-1" d="M-47.021 377h-6.67a.663.663 0 0 0-.661.663.663.663 0 0 0 .661.659h6.67a.661.661 0 0 0 .661-.659.656.656 0 0 0-.193-.468.655.655 0 0 0-.468-.195zm0 .25z"/>
+        <circle id="Ellipse_122" data-name="Ellipse 122" class="cls-1" cx="1.25" cy="1.25" r="1.25" transform="translate(-59.107 364.574)"/>
+        <circle id="Ellipse_123" data-name="Ellipse 123" class="cls-1" cx="1.25" cy="1.25" r="1.25" transform="translate(-59.107 370.574)"/>
+        <circle id="Ellipse_124" data-name="Ellipse 124" class="cls-1" cx="1.25" cy="1.25" r="1.25" transform="translate(-59.107 376.574)"/>
+    </g>
+</svg>

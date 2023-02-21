@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" width="48px" height="48px">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="122.229378" y1="168.541885" x2="75.606941" y2="121.919441" gradientTransform="matrix(0.280702,0,0,0.280702,0,0)">
+<stop offset="0" style="stop-color:rgb(94.117647%,5.882353%,10.196079%);stop-opacity:1;"/>
+<stop offset="0.454" style="stop-color:rgb(83.137256%,9.803922%,12.54902%);stop-opacity:1;"/>
+<stop offset="0.617" style="stop-color:rgb(68.627453%,9.411765%,11.764706%);stop-opacity:1;"/>
+<stop offset="0.733" style="stop-color:rgb(56.862748%,8.627451%,10.588235%);stop-opacity:1;"/>
+<stop offset="0.827" style="stop-color:rgb(50.196081%,9.019608%,10.588235%);stop-opacity:1;"/>
+<stop offset="0.907" style="stop-color:rgb(39.215687%,5.490196%,7.058824%);stop-opacity:1;"/>
+<stop offset="0.933" style="stop-color:rgb(32.156864%,2.352941%,3.529412%);stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface13765271">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 37 44 L 25 44 L 14 33 L 20 27 Z M 37 44 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,4.705882%,8.627451%);fill-opacity:1;" d="M 5 24 L 25 4 L 37 4 L 11 30 Z M 5 24 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,4.705882%,8.627451%);fill-opacity:1;" d="M 37 22 L 20 39 L 14 33 L 25 22 Z M 37 22 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(78.823531%,9.803922%,12.54902%);fill-opacity:1;" d="M 14 33 L 20 27 L 26 33 L 20 39 Z M 14 33 "/>
+</g>
+</svg>

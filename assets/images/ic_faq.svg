@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22">
+    <defs>
+        <style>
+            .cls-1{fill:#1e2022}
+        </style>
+    </defs>
+    <g id="ic_faq" transform="translate(-38.292)">
+        <path id="Path_1535" data-name="Path 1535" class="cls-1" d="M80.371 186.643a.841.841 0 1 0 .84.839.84.84 0 0 0-.84-.839z" transform="translate(-36.845 -166.758)"/>
+        <path id="Path_1536" data-name="Path 1536" class="cls-1" d="M45 0a6.711 6.711 0 0 0-6.7 6.7.8.8 0 0 0 1.6 0 5.105 5.105 0 1 1 5.1 5.109.8.8 0 0 0-.082 0A2.268 2.268 0 0 0 42.731 14a.8.8 0 0 0 0 .082v3.294a.8.8 0 0 0 1.6 0v-3.298a.671.671 0 0 1 .669-.671A6.7 6.7 0 0 0 45 0z"/>
+    </g>
+</svg>

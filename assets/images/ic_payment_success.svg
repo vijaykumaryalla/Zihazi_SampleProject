@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="122" height="122" viewBox="0 0 122 122">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#11a12e;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px}
+        </style>
+    </defs>
+    <g id="Icon_feather-smile" data-name="Icon feather-smile" transform="translate(-1 -1)">
+        <path id="Path_12135" data-name="Path 12135" class="cls-1" d="M121 62A59 59 0 1 1 62 3a59 59 0 0 1 59 59z"/>
+        <path id="Path_12136" data-name="Path 12136" class="cls-1" d="M12 21s8.85 11.8 23.6 11.8S59.2 21 59.2 21" transform="translate(26.4 52.8)"/>
+        <path id="Path_12137" data-name="Path 12137" class="cls-1" d="M13.5 13.5h.059" transform="translate(30.8 30.8)"/>
+        <path id="Path_12138" data-name="Path 12138" class="cls-1" d="M22.5 13.5h.059" transform="translate(57.2 30.8)"/>
+    </g>
+</svg>
