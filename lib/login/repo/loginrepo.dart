@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:get/get.dart';
 
+import '../../baseclasses/dio.dart';
 import '../../baseclasses/sessions.dart';
 import '../../baseclasses/utils/constants.dart';
 import '../../service/apiresponse.dart';
@@ -18,12 +19,12 @@ class LoginRepo<T> extends GetConnect {
 
   Future<ApiResponse> login(dynamic reqModel) async {
     try {
-      var result = await post(
+      var result = await DioClient().dio.post(
           Constants.baseUrl+"custom-api/login",
-          jsonEncode(reqModel),
-          headers: StorageService().getHeader()
+         data: jsonEncode(reqModel),
+          // headers: StorageService().getHeader()
       );
-      return ApiResponse.success(result.body);
+      return ApiResponse.success(result.data);
     } on SocketException {
       return ApiResponse.error(NoInternetError());
     }

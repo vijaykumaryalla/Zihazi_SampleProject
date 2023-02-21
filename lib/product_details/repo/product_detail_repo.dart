@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:get/get.dart';
+import 'package:zihazi_sampleproject/baseclasses/dio.dart';
 import 'package:zihazi_sampleproject/baseclasses/sessions.dart';
 import 'package:zihazi_sampleproject/baseclasses/utils/constants.dart';
 import 'package:zihazi_sampleproject/service/apiresponse.dart';
@@ -18,12 +19,12 @@ class ProductDetailRepo extends GetConnect{
 
   Future<ApiResponse> getProductDetails(dynamic reqModel) async {
     try {
-      var result = await post(
+      var result = await DioClient().dio.post(
           Constants.baseUrl+"custom-api/homepage/getproductdetails",
-          jsonEncode(reqModel),
-          headers: StorageService().getHeader()
+         data: jsonEncode(reqModel),
+          // headers: StorageService().getHeader()
       );
-      return ApiResponse.success(result.body);
+      return ApiResponse.success(result.data);
     } on SocketException {
       return ApiResponse.error("No Internet");
     }

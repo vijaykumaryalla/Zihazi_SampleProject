@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:get/get_connect/connect.dart';
+import 'package:zihazi_sampleproject/baseclasses/dio.dart';
 
 import '../../baseclasses/sessions.dart';
 import '../../baseclasses/utils/constants.dart';
@@ -18,12 +19,12 @@ class DashboardRepo extends GetConnect{
 
   Future<ApiResponse> getBanner(dynamic reqModel) async {
     try {
-      var result = await http.post(
-          Uri.parse(Constants.baseUrl+"custom-api/homepage/banner"),
-          body:jsonEncode(reqModel),
-          headers: StorageService().getHeader()
+      var result = await DioClient().dio.post(
+          Constants.baseUrl+"custom-api/homepage/banner",
+          data:jsonEncode(reqModel),
+          // headers: StorageService().getHeader()
       );
-      return ApiResponse.success(jsonDecode(result.body));
+      return ApiResponse.success((result.data));
     } on SocketException {
       return ApiResponse.error("No Internet");
     }
@@ -40,11 +41,11 @@ class DashboardRepo extends GetConnect{
 
   Future<ApiResponse> getCategories() async {
     try {
-      var result = await http.post(
-          Uri.parse(Constants.baseUrl+"custom-api/homepage/categories"),
-          headers: StorageService().getHeader()
+      var result = await DioClient().dio.post(
+          Constants.baseUrl+"custom-api/homepage/categories",
+          // headers: StorageService().getHeader()
       );
-      return ApiResponse.success(jsonDecode(result.body));
+      return ApiResponse.success(result.data);
 
     } on SocketException {
       return ApiResponse.error("No Internet");
@@ -62,12 +63,12 @@ class DashboardRepo extends GetConnect{
 
   Future<ApiResponse> getCategoryProducts(dynamic reqModel) async {
     try {
-      var result = await http.post(
-          Uri.parse(Constants.baseUrl+"custom-api/homepage/topcategories"),
-          body: jsonEncode(reqModel),
-          headers: StorageService().getHeader()
+      var result = await DioClient().dio.post(
+          Constants.baseUrl+"custom-api/homepage/topcategories",
+          data: jsonEncode(reqModel),
+          // headers: StorageService().getHeader()
       );
-      return ApiResponse.success(jsonDecode(result.body));
+      return ApiResponse.success(result.data);
     } on SocketException {
       return ApiResponse.error("No Internet");
     }
@@ -84,11 +85,11 @@ class DashboardRepo extends GetConnect{
 
   Future<ApiResponse> getTopBrands() async {
     try {
-      var result = await http.post(
-          Uri.parse(Constants.baseUrl+"custom-api/homepage/brands"),
-          headers: StorageService().getHeader()
+      var result = await DioClient().dio.post(
+          Constants.baseUrl+"custom-api/homepage/brands",
+          // headers: StorageService().getHeader()
       );
-      return ApiResponse.success(jsonDecode(result.body));
+      return ApiResponse.success(result.data);
     } on SocketException {
       return ApiResponse.error("No Internet");
     }
