@@ -86,6 +86,7 @@ class LoginController extends BaseController{
           error(baseResponse.message);
           state.value = Constants.failure;
         }
+
       } else {
         error(result.error);
         state.value = Constants.failure;
