@@ -7,7 +7,7 @@ class DioInterceptor extends Interceptor {
 var storage = Get.Get.put(StorageService());
   @override
   void onRequest(RequestOptions options, RequestInterceptorHandler handler) {
-    options.headers['Token'] = storage.read(Constants.apiToken);
+    options.headers['Authorization'] = storage.read(Constants.apiToken);
     options.headers['content-type'] ="application/json";
     options.headers['lang'] = storage.getAppLanguage();
 

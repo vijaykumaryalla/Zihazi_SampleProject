@@ -20,7 +20,7 @@ class DashboardRepo extends GetConnect{
   Future<ApiResponse> getBanner(dynamic reqModel) async {
     try {
       var result = await DioClient().dio.post(
-          Constants.baseUrl+"custom-api/homepage/banner",
+          "homepage/banner",
           data:jsonEncode(reqModel),
           // headers: StorageService().getHeader()
       );
@@ -42,7 +42,7 @@ class DashboardRepo extends GetConnect{
   Future<ApiResponse> getCategories() async {
     try {
       var result = await DioClient().dio.post(
-          Constants.baseUrl+"custom-api/homepage/categories",
+          "homepage/categories",
           // headers: StorageService().getHeader()
       );
       return ApiResponse.success(result.data);
@@ -64,7 +64,7 @@ class DashboardRepo extends GetConnect{
   Future<ApiResponse> getCategoryProducts(dynamic reqModel) async {
     try {
       var result = await DioClient().dio.post(
-          Constants.baseUrl+"custom-api/homepage/topcategories",
+         "homepage/topcategories",
           data: jsonEncode(reqModel),
           // headers: StorageService().getHeader()
       );
@@ -86,7 +86,7 @@ class DashboardRepo extends GetConnect{
   Future<ApiResponse> getTopBrands() async {
     try {
       var result = await DioClient().dio.post(
-          Constants.baseUrl+"custom-api/homepage/brands",
+         "homepage/brands",
           // headers: StorageService().getHeader()
       );
       return ApiResponse.success(result.data);

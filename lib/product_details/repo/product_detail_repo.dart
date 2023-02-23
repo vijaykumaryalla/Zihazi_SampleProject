@@ -20,7 +20,7 @@ class ProductDetailRepo extends GetConnect{
   Future<ApiResponse> getProductDetails(dynamic reqModel) async {
     try {
       var result = await DioClient().dio.post(
-          Constants.baseUrl+"custom-api/homepage/getproductdetails",
+          "homepage/getproductdetails",
          data: jsonEncode(reqModel),
           // headers: StorageService().getHeader()
       );
@@ -42,7 +42,7 @@ class ProductDetailRepo extends GetConnect{
   Future<ApiResponse> removeWishlistItem(dynamic reqModel) async {
     try {
       var result = await post(
-          Constants.baseUrl+"custom-api/wishlist/remove",
+          "wishlist/remove",
           jsonEncode(reqModel),
           headers: StorageService().getHeader()
       );
@@ -64,7 +64,7 @@ class ProductDetailRepo extends GetConnect{
   Future<ApiResponse> addWishlistItem(dynamic reqModel) async {
     try {
       var result = await post(
-          Constants.baseUrl+"custom-api/wishlist/add",
+          "wishlist/add",
           jsonEncode(reqModel),
           headers: StorageService().getHeader()
       );

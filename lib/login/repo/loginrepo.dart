@@ -20,7 +20,7 @@ class LoginRepo<T> extends GetConnect {
   Future<ApiResponse> login(dynamic reqModel) async {
     try {
       var result = await DioClient().dio.post(
-          Constants.baseUrl+"custom-api/login",
+         "login",
          data: jsonEncode(reqModel),
           // headers: StorageService().getHeader()
       );
